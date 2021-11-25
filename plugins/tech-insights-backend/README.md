@@ -42,7 +42,7 @@ export default async function createPlugin({
   });
 
   return await createRouter({
-    ...(await builder.build()),
+    ...(await builder),
     logger,
     config,
   });
